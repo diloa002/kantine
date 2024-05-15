@@ -31,7 +31,7 @@ $conn->close();
 <div>
 
 <div>
-    <h1>Personlig informasjon</h1>
+    <h4>Personlig informasjon</h4>
     <form>
         <label for="fornavn">Fornavn:</label>
         <input type="text" id="fornavn" name="fornavn"><br><br>
@@ -42,14 +42,14 @@ $conn->close();
 </div>
 
 <div>
-    <h1>Kostnadsted som skal belastes</h1>
+    <h4>Kostnadsted som skal belastes</h4>
     <form>
         <input type="text" name="kostnadsted_belastes">
     </form>
 </div>
 
 <div>
-    <h1>Bestillingsdato og -tidspunkt</h1>
+    <h4>Bestillingsdato og -tidspunkt</h4>
     <form>
         <input type="datetime-local" name="bestillingsdato">
     </form>
@@ -61,7 +61,7 @@ $conn->close();
         // Loop gjennom hver kategori
         foreach ($categories as $category_id => $category_name) {
             echo "<div>";
-            echo "<h1>$category_name</h1>";
+            echo "<h4>$category_name</h4>";
 
             // Henter meny elementer for denne kategorien
             include "db.con.php"; // Inkluder databasetilkoblingen igjen
