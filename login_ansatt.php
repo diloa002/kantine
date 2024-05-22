@@ -19,7 +19,6 @@
 
     
     <?php
-include "nav.inc.php";
 
 
 if ($_SERVER["REQUEST_METHOD"]=="POST") {
@@ -51,18 +50,20 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
      $result = $stmt->get_result();
      $user = $result->fetch_assoc();
 
-$test = password_verify($passord, $user['passord']);
+     $test = password_verify($passord, $user['passord']);
+     //$test = password_verify($user['passord'], $passord);
 
      print $test;
 
     // Sjekk om brukeren ble funnet
     if ($user) {
         // Sjekk om passordet er korrekt
-        if ($test == true) {
+        //if ($test == true) {
+            if ($test) {
             // Start en ny økt og lagre brukerinformasjon
             $_SESSION['bruker'] = $user['navn'];
-            echo "Innlogging fnker";
-            //header("location: grønn.php");
+            echo "Innlogging funker";
+            ("location: insert.php");
             exit();
         } else {
             echo "Feil passord.";
