@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
 
     // SQL-spørring for å hente brukerinformasjon
     $query = "SELECT email, navn, passord FROM bruker WHERE email = ?";
-    $stmt = $con->prepare($query);
+    $stmt = $conn->prepare($query);
     $stmt->bind_param("s", $email);
     $stmt->execute();
 
