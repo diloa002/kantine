@@ -3,7 +3,7 @@
 include "db.con.php";
 
 // fiol
-$file = 'drikke.csv';
+$file = 'meny_kantine.csv';
 // lage en funksjon som skal kunne gjøre det slik at jeg kan velge fil som skal bli inserted.
 
 // sjekke om den er der 
@@ -20,14 +20,14 @@ if (file_exists($file)) {
         // gå gjennom alle 
         while (($data = fgetcsv($handle, 5147, ",")) !== false) {
             // få data og sette dem lik den kolonnen som den tilhører
-            $nr = $data[0];
-            $meny = $data[1];
+            $idmeny = $data[0];
+            $navn = $data[1];
             $innhold = $data[2];
             $pris = $data[3];
             $kategori = $data[4];
 
             // innssert
-            $sql = "INSERT INTO meny (nr, meny, innhold, pris, kategori) VALUES ('$nr', '$meny', '$innhold', '$pris', '$kategori')";
+            $sql = "INSERT INTO meny (idmeny, navn, innhold, pris, kategori) VALUES ('$idmeny', '$navn', '$kategori', '$innhold', '$pris')";
 
             // do the deed ykyk
             if ($conn->query($sql) === true) {
