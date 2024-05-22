@@ -8,10 +8,7 @@
 
 </head>
 <body>
-    <?php
-include "nav.inc.php";
 
-    ?>
 <button><a href="login_ansatt.php">Logg inn som ansatt</a></button>
 <button><a href="login_kantine.php">Logg inn som kantinearbeider</a></button>
 
