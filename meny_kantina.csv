@@ -1,0 +1,50 @@
+﻿nr.,Meny,innhold,Pris,kategori
+1,Kaffekanne 1 liter,0,90,1
+2,Kaffekontainer 5 liter,0,250,1
+3,Kaffe halv dag,0,30,1
+4,Kaffe hel dag,0,40,1
+5,"Brus, pepsi eller solo",0,30,1
+6,Mineralvann med eller uten kullsyre,0,25,1
+7,Liten juice eple eller appelsin,0,15,1
+8,Melk 1 liter hel dagspris,0,35,1
+9,Kurspakke Storselger,"Bagutt med normalt pålegg, 1 kakebit, 1 mineralvann og kaffe",109,2
+10,Kurspakke Liten,"Halvt rundstykker med variert pålegg, 1 croissant og kaffe",79,2
+11,Kurspakke Pause,"Nøttemiks med tørket frukt. Sesongens frukt (oppskåret), kaffe",75,2
+12,Cæsar salat med krutonger og kylling,0,79,3
+13,Salat med tunfisk og egg,0,79,3
+14,Klassisk kaldtallerken,0,185,4
+15,Tapestalleren,0,199,4
+16,"Bagetter, normal","Ost, skinke egg, tomat, kylling, karri eller tunfisk",48,5
+17,"Bagetter, luksus",Roastbiff & remulade,69,5
+18,"Bagetter, luksus",Laks og eggrøre,69,5
+19,"Bagetter, luksus","Reker, egg og majones",69,5
+20,"Rundstykker, normal (1/2 rundstykke med pålegg","Ost, skinke egg, tomat, kylling, karri eller tunfisk",30,5
+21,"Rundstykker, luksus (1/2 rundstykke med pålegg",Roastbiff & remulade,42,5
+22,"Rundstykker, luksus (1/2 rundstykke med pålegg",Laks og eggrøre,42,5
+23,"Rundstykker, luksus (1/2 rundstykke med pålegg","Reker, egg og majones",42,5
+24,Clabatta 2,Kylling med karri,55,5
+25,Clabatta 3,Tunfisk og egg,55,5
+26,Focaccia 1,"Soltørket tomat, grønn presto og kylling",55,5
+27,Focaccia 2,Eggrøre og røkt laks,55,5
+28,Wraps 1/1,"Laks, eggrøre, tomat og kremost",48,5
+29,Wraps 1/1,"Cæsar salat, tomat, rødløk, krutong, kylling og parmesan",48,5
+30,Oksegryte med ris,0,165,6
+31,Chili sin carne med rømme og basmatiris,0,155,6
+32,Kyllinggryte med basmatiris,0,165,6
+33,Lasagne vegetar,0,99,7
+34,Pizza hel med halal pepperoni,0,180,7
+35,Pizza hel vegetar,0,180,7
+36,Muffins,0,22,8
+37,Cookies,0,20,8
+38,Donuts,0,20,8
+39,Dagens kake Sjokolade eller gulrot,0,30,8
+40,Croissant,0,30,8
+41,Kanelsnurrknute stor,0,35,8
+42,Boller,0,15,8
+43,Wienerbrød,0,30,8
+44,Sesongens frukt smakfullt skåret,0,35,9
+45,Sesongens frukt skåret med twist,0,45,9
+46,Sesongens frukt hel,0,9,9
+47,Nøttemiks med tørket frukt,0,29,9
+48,Kjeks per prosjon,0,19,9
+49,Proteinbar YT,0,35,9
