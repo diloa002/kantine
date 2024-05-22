@@ -66,13 +66,13 @@ $conn->close();
             // Henter meny elementer for denne kategorien
             include "db.con.php"; // Inkluder databasetilkoblingen igjen
 
-            $sql_menu = "SELECT nr, meny, pris FROM meny WHERE kategori = '$category_id'";
+            $sql_menu = "SELECT idmeny, navn, pris FROM meny WHERE kategori = '$category_id'";
             $result_menu = $conn->query($sql_menu);
 
             $menu_items = array();
             if ($result_menu->num_rows > 0) {
                 while ($row = $result_menu->fetch_assoc()) {
-                    $menu_items[$row["nr"]] = $row["meny"] . " - " . $row["pris"] . " kr";
+                    $menu_items[$row["idmeny"]] = $row["navn"] . " - " . $row["pris"] . " kr";
                 }
             }
 

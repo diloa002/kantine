@@ -3,7 +3,7 @@
 include "db.con.php";
 
 // fiol
-$file = 'meny_kantine.csv';
+$file = 'meny_kantina.csv';
 // lage en funksjon som skal kunne gjøre det slik at jeg kan velge fil som skal bli inserted.
 
 // sjekke om den er der 
@@ -27,7 +27,7 @@ if (file_exists($file)) {
             $kategori = $data[4];
 
             // innssert
-            $sql = "INSERT INTO meny (idmeny, navn, innhold, pris, kategori) VALUES ('$idmeny', '$navn', '$kategori', '$innhold', '$pris')";
+            $sql = "INSERT INTO meny (idmeny, navn, kategori, innhold, pris) VALUES ('$idmeny', '$navn', '$kategori', '$innhold', '$pris')";
 
             // do the deed ykyk
             if ($conn->query($sql) === true) {
