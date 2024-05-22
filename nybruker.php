@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Forbered og utfør spørringen
     $query = "INSERT INTO bruker (email, navn, passord, admin) VALUES (?, ?, ?, ?)";
-    $stmt = $con->prepare($query);
+    $stmt = $conn->prepare($query);
 
     // Sjekk om spørringen ble forberedt riktig
     if ($stmt) {
