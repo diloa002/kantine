@@ -1,0 +1,109 @@
+body {
+    background-color: whitesmoke;
+    font-family: Arial, sans-serif; /* legger til en fallback-font hvis Arial ikke er tilgjengelig */
+    text-align: center; /* Sentrerer innholdet i midten av siden */
+}
+
+button {
+    background-color: #21e2f4;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px; /* øker avstanden mellom knappene */
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button a  {
+    color:white;
+}
+
+button:hover {
+    background-color: #1ca9c9; /* endrer farge når musepekeren svever over knappen */
+}
+
+h3 {
+    margin-top: 20px; /* legger til litt mellomrom over overskriften */
+}
+
+a {
+    color: #21e2f4; /* setter fargen til lenkene */
+    text-decoration: none; /* fjerner understrek fra lenkene */
+}
+
+a:hover {
+    text-decoration: underline; /* legger til understrek når musepekeren svever over lenkene */
+}
+
+/* Legg til din eksisterende styling her */
+
+/* Tilpasning av stil for bestillingsskjemaet */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* Bakgrunnsfarge for bestillingsskjemacontainer */
+    border-radius: 10px; /* Runde hjørner for bestillingsskjemacontainer */
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* Skyggeeffekt for bestillingsskjemacontainer */
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="datetime-local"],
+input[type="number"] {
+    width: calc(100% - 22px); /* Justering for bredde av input-felt */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #21e2f4;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 20px; /* Runde hjørner for bestillingsknappen */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Overgangseffekt for bakgrunnsfarge */
+}
+
+input[type="submit"]:hover {
+    background-color: #1ca9c9;
+}
+
+/* Tilpasning av stil for kommentarfeltet */
+.comment {
+    margin-top: 20px;
+}
+
+.comment input[type="text"] {
+    width: calc(100% - 22px); /* Justering for bredde av kommentarfelt */
+}
+
+/* Tilpasning av stil for betalingsfelt */
+.betaling input[type="text"] {
+    width: calc(100% - 22px); /* Justering for bredde av betalingsfelt */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.navn {
+    font-weight: bold;
+}
+
+.kategori {
+    margin-bottom: 80px;
+    margin-top: 20px;
+}

@@ -29,6 +29,8 @@
 
 <?php
 
+include "db.con.php";
+
 //Om POST er brukt hentes dataen fra formen og blir til variablene
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
@@ -46,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Forbered og utfør spørringen
     $query = "INSERT INTO bruker (email, navn, passord, admin) VALUES (?, ?, ?, ?)";
-    $stmt = $con->prepare($query);
+    $stmt = $conn->prepare($query);
 
     // Sjekk om spørringen ble forberedt riktig
     if ($stmt) {
@@ -58,7 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($stmt->affected_rows > 0) {
             // Spørringen var vellykket, gjør videre handling
             $stmt->close();
-            $con->close();
+            $conn->close();
             header("Location: index.php");
             exit();
         } else {

@@ -20,7 +20,7 @@
     
 <?php
 
-include "db_connection.php";
+include "db.con.php";
 
 if ($_SERVER["REQUEST_METHOD"]=="POST") {
     session_start();
@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
 
     // SQL-spørring for å hente brukerinformasjon
     $query = "SELECT email, navn, passord, `admin` FROM bruker WHERE email = ?";
-    $stmt = $con->prepare($query);
+    $stmt = $conn->prepare($query);
     $stmt->bind_param("s", $email);
     $stmt->execute();
     $result = $stmt->get_result();
