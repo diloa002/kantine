@@ -20,7 +20,6 @@
     
 <?php
 
-include "nav.inc.php";
 include "db_connection.php";
 
 if ($_SERVER["REQUEST_METHOD"]=="POST") {
@@ -57,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
             if ($user['admin'] == 1) {
                 // Start en ny økt og lagre brukerinformasjon
                 $_SESSION['bruker'] = $user['navn'];
-                header("location: grønn.php");
+                header("location: meny.php");
                 exit();
             } else {
                 echo "Du har ikke tilgang til adminområdet.";

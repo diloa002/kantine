@@ -19,7 +19,6 @@
 
     
     <?php
-include "nav.inc.php";
 
 
 if ($_SERVER["REQUEST_METHOD"]=="POST") {
@@ -64,7 +63,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
             // Start en ny økt og lagre brukerinformasjon
             $_SESSION['bruker'] = $user['navn'];
             echo "Innlogging funker";
-            //header("location: grønn.php");
+            ("location: insert.php");
             exit();
         } else {
             echo "Feil passord.";

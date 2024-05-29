@@ -28,7 +28,6 @@
 
 
 <?php
-include "nav.inc.php";
 
 //Om POST er brukt hentes dataen fra formen og blir til variablene
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -60,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Spørringen var vellykket, gjør videre handling
             $stmt->close();
             $con->close();
-            header("Location: grønn.php");
+            header("Location: index.php");
             exit();
         } else {
             // Spørringen feilet
